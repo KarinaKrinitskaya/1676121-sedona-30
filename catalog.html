@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+     <header>
+	    <nav>
+		   <a>
+		   <img src="img/logo.svg" alt="Логотип Седоны">
+		   </a>
+		   <ul>
+			  <li><a href="#">Информация</a></li>
+			  <li><a href="#">Фото и видео</a></li>
+			  <li><a href="#">Карта штата</a></li>
+			  <li><a href="#">Гостиницы</a></li>
+		   </ul>
+	    </nav>
+     </header>
+	 <main>
+<section>
+	<h2>Фильтр отелей</h2>
+	<form method="get" action="#">
+		<div>
+			<fieldset>
+				<legend>Инфраструктура</legend>
+				<ul>
+					<li>
+						<input type="checkbox" name="pool" id="filter-pool" checked>
+						<label for="filter-pool">Бассейн</label>
+					</li>
+					<li>
+						<input type="checkbox" name="parking" id="filter-parking">
+						<label for="filter-parking">Парковка</label>
+					</li>
+					<li>
+						<input type="checkbox" name="wi-fi" id="filter-wifi">
+						<label for="filter-wifi">WI-FI</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Тип жилья</legend>
+				<ul>
+					<li>
+						<input type="checkbox" name="hotel" id="filter-hotel" checked>
+						<label for="filter-hotel">Гостиница</label>
+					</li>
+					<li>
+						<input type="checkbox" name="motel" id="filter-motel" checked>
+						<label for="filter-motel">Мотель</label>
+					</li>
+					<li>
+						<input type="checkbox" name="apartments" id="filter-apartments" checked>
+						<label for="filter-apartments">Апартаменты</label>
+					</li>
+				</ul>
+			</fieldset>
+		</div>
+		<div>
+			<p>Стоимость в сутки(P):</p>
+			<p>
+			<label for="filter__label">От <input type="text" name="min-price" value="0">
+			</label>
+			<label for="filter__label">До <input type="text" name="mфч-price" value="3000">
+			</label>
+			</p>
+			<div>
+				<button type="submit">Показать</button>
+			</div>
+		</div>
+	</form>
+</section>
+<section>
+	<h2>Результат поиска</h2>
+	<div>
+		<b>Найдено 3</b>
+	</div>
+	<div>
+		<p>Сортировка:</p>
+		<ul>
+			<li>
+				<a href="#">По цене</a>
+			</li>
+			<li>
+				<a href="#">По типу</a>
+			</li>
+			<li>
+				<a href="#">По рейтингу</a>
+			</li>
+		</ul>
+	</div>
+	<ul>
+		<li>
+			<a href="#">Вверх</a>
+		</li>
+		<li>
+			<a href="#">Вниз</a>
+		</li>
+	</ul>
+</section>
+<section>
+	<ul>
+		<li>
+			<h3>Amara Resort & Spa</h3>
+			<p>
+				<img src="img/Amara-Resort-&-Spa.jpg" alt="Amara Resort & Spa">
+			</p>
+		</a>
+		<div>
+			<p>Гостиница</p>
+			<a href="#">Подробнее</a>
+		</div>
+		<div>
+			<p>от 4000 Р</p>
+			<button type="button">Забронировать</button>
+		</div>
+		<div>
+			<ul>
+				<li><span><img src="img/star.svg" alt=""></span></li>
+				<li><span><img src="img/star.svg" alt=""></span></li>
+				<li><span><img src="img/star.svg" alt=""></span></li>
+				<li><span><img src="img/star.svg" alt=""></span></li>
+			</ul>
+		</div>
+		<div>
+			<p>Рейтинг:8,5</p>
+		</div>
+	</li>
+	<li>
+		<h3>Desert Quail Inn</h3>
+		<p>
+			<img src="img/Desert-Quail-Inn.jpg" alt="Desert Quail Inn">
+		</p>
+	</a>
+	<div>
+		<p>Мотель</p>
+		<a href="#">Подробнее</a>
+	</div>
+	<div>
+		<p>от 3000 Р</p>
+		<button type="button">Забронировать</button>
+	</div>
+	<div>
+		<ul>
+			<li><span><img src="img/star.svg" alt=""></span></li>
+			<li><span><img src="img/star.svg" alt=""></span></li>
+			<li><span><img src="img/star.svg" alt=""></span></li>
+		</ul>
+	</div>
+	<div>
+		<p>Рейтинг:8,9</p>
+	</div>
+</li>
+<li>
+	<h3>Villas At Poco Diablo</h3>
+	<p>
+		<img src="img/Villas-At-Poco-Diablo.jpg" alt="Villas At Poco Diablo">
+	</p>
+</a>
+<div>
+	<p>Апартаменты</p>
+	<a href="#">Подробнее</a>
+</div>
+<div>
+	<p>от 2000 Р</p>
+	<button type="button">Забронировать</button>
+</div>
+<div>
+	<ul>
+		<li><span><img src="img/star.svg" alt=""></span></li>
+		<li><span><img src="img/star.svg" alt=""></span></li>
+		
+	</ul>
+</div>
+<div>
+	<p>Рейтинг:9,2</p>
+</div>
+</li>
+</ul>
+</section>
+	 </main>
+<footer>
+  <div>
+    <div>
+	<p>#visitsedona</p>
+	<p>Тел:<a href="tel:+74956660166">+7 (495) 666-01-66</a></p></div>
+		<ul>
+			<li>
+				<a href="#">Вконтакте</a>
+			</li>
+			<li>
+				<a href="#">Фейсбук</a>
+			</li>
+			<li>
+				<a href="#">Инстаграм</a>
+			</li>
+		</ul>
+		<p> Website by <a href="https://htmlacademy.ru">HTML Academy</a> </p>
+	</div>
+</footer>
+   </body>
+</html>
+
