@@ -1,0 +1,145 @@
+/*Variables*/
+:root{
+--basic-white: #ffffff;
+--basic-black: #000000;
+--Slightly-desaturated-blue:#81B3D2;
+--basic-Very-light-gray:#EEEEEE;
+--Mostly-desaturated-dark-orange:#766357;
+--Very-light-gray:#F2F2F2;
+--gray:#A9A9A9;
+--Slightly-desaturated-blue:#669EC0;
+--Moderate-blue:#5496BD;
+--Very-dark-grayish-orange:#604E43;
+--Very-dark-desaturated-orange:#503E33;
+--Very-light-gray:#EBEBEB;
+--Light-gray:#CACACA;
+}
+
+/*Global*/
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'PT Sans',sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: var(--basic-Very-light-gray);
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+.main-nav{
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.site-nav{
+  list-style: none;
+}
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+color: var(--Slightly-desaturated-blue);
+}
+
+h1{
+  text-align: center;
+  font-size: 21px;
+
+}
+.text{
+   text-align: center;
+}
+
+/* Features */
+
+.features-item h3 {
+font-size: 21px;
+line-height: 21px;
+}
+.features-item{
+ line-height: 21px;
+ background-color: var(--Slightly-desaturated-blue);
+}
+.features-list-add{
+  background-color: var(--basic-white);
+  list-style: none;
+}
+.features-list-add-item{
+  text-align: center;
+  line-height: 21px;
+}
+.features-list-add-item h4{
+font-size: 21px;
+line-height: 21px;
+}
+.features-unit h3{
+font-size: 21px;
+line-height: 21px;}
+.features-unit{
+list-style: none;
+text-align: center;
+  line-height: 21px;
+}
+.search{
+  background-color:var(--basic-white);
+  text-align: center;
+  line-height: 24px;
+}
+.search h2{
+font-size: 30px;
+line-height: 24px;
+}
+.button{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--Mostly-desaturated-dark-orange);
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--Very-dark-grayish-orange);
+}
+.footer-visit{
+  font-size: 21px
+  color: var(--basic-black);
+}
+.footer-visit-link a {
+  text-decoration: underline;
+
+}
+.footer-visit-link  a:hover,
+.footer-visit-link a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+    list-style: none;
+}
+.social-button {
+  color: inherit;
+  background-color: var(--Slightly-desaturated-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--Moderate-blue);
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--Slightly-desaturated-blue;}
+
+
+
