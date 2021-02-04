@@ -2,17 +2,17 @@
 :root{
 --basic-white: #ffffff;
 --basic-black: #000000;
---Slightly-desaturated-blue:#81B3D2;
---basic-Very-light-gray:#EEEEEE;
---Mostly-desaturated-dark-orange:#766357;
---Very-light-gray:#F2F2F2;
+--slightly-desaturated-blue:#81B3D2;
+--basic-very-light-gray:#EEEEEE;
+--mostly-desaturated-dark-orange:#766357;
+--very-light-gray:#F2F2F2;
 --gray:#A9A9A9;
---Slightly-desaturated-blue:#669EC0;
---Moderate-blue:#5496BD;
---Very-dark-grayish-orange:#604E43;
---Very-dark-desaturated-orange:#503E33;
---Very-light-gray:#EBEBEB;
---Light-gray:#CACACA;
+--slightly-desaturated-blue:#669EC0;
+--moderate-blue:#5496BD;
+--very-dark-grayish-orange:#604E43;
+--very-dark-desaturated-orange:#503E33;
+--very-light-gray:#EBEBEB;
+--light-gray:#CACACA;
 }
 
 /*Global*/
@@ -20,18 +20,34 @@
 body{
   margin: 0;
   padding: 0;
-  font-family:'PT Sans',sans-serif;
+  font-family:'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  background-color: var(--basic-Very-light-gray);
+  background-color: var(--basic-very-light-gray);
 }
+
 a{
   text-decoration: none;
 }
+
 img{
   max-width: 100%;
   height: auto;
+}
+
+.button{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--mostly-desaturated-dark-orange);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--very-dark-grayish-orange);
 }
 
 /* Main navigation */
@@ -39,107 +55,114 @@ img{
   color: var(--basic-black);
   background-color: transparent;
 }
+
 .site-nav{
   list-style: none;
 }
+
 .site-nav a:hover,
 .site-nav a:focus,
-.user-nav a:hover,
-.user-nav a:focus {
-color: var(--Slightly-desaturated-blue);
+.site-nav a:active  {
+color: var(--slightly-desaturated-blue);
 }
 
-h1{
+.title{
   text-align: center;
   font-size: 21px;
-
 }
+
 .text{
    text-align: center;
 }
 
 /* Features */
 
-.features-item h3 {
+.features {
+ line-height: 21px;
+ background-color: var(--slightly-desaturated-blue);
+}
+
+.features-item h3{
 font-size: 21px;
 line-height: 21px;
 }
-.features-item{
- line-height: 21px;
- background-color: var(--Slightly-desaturated-blue);
-}
-.features-list-add{
+
+.features-sublist{
   background-color: var(--basic-white);
   list-style: none;
 }
-.features-list-add-item{
+
+.features-sublist-item{
   text-align: center;
   line-height: 21px;
 }
-.features-list-add-item h4{
+
+.features-sublist-item h4{
 font-size: 21px;
 line-height: 21px;
 }
-.features-unit h3{
+
+.features-item h3{
 font-size: 21px;
-line-height: 21px;}
-.features-unit{
+line-height: 21px;
+}
+
+.features-item {
 list-style: none;
 text-align: center;
   line-height: 21px;
 }
+
 .search{
   background-color:var(--basic-white);
   text-align: center;
   line-height: 24px;
 }
+
 .search h2{
 font-size: 30px;
 line-height: 24px;
 }
-.button{
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--Mostly-desaturated-dark-orange);
-}
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: var(--Very-dark-grayish-orange);
-}
+
 .footer-visit{
   font-size: 21px
   color: var(--basic-black);
 }
+
 .footer-visit-link a {
   text-decoration: underline;
-
 }
-.footer-visit-link  a:hover,
-.footer-visit-link a:focus {
+
+.footer-visit-link :hover,
+.footer-visit-link :focus,
+.footer-visit-link :active {
   text-decoration: none;
 }
 
-.footer-social {
+.social-list {
   text-align: center;
-    list-style: none;
+  list-style: none;
 }
-.social-button {
+
+.social-link {
   color: inherit;
-  background-color: var(--Slightly-desaturated-blue);
+  background-color: var(--slightly-desaturated-blue);
 }
 
-.social-button:hover,
-.social-button:focus {
-  background-color: var(--Moderate-blue);
+.social-link:hover,
+.social-link:focus,
+.social-link:active
+{
+  background-color: var(--moderate-blue);
 }
 
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: var(--Slightly-desaturated-blue;}
+.copyright-link .button:hover,
+.copyright-link .button:focus
+.copyright-link .button:active {
+color: var(--slightly-desaturated-blue;
+}
+
+
 
 
 
