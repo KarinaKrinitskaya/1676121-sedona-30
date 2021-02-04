@@ -13,6 +13,7 @@
 --very-dark-desaturated-orange:#503E33;
 --very-light-gray:#EBEBEB;
 --light-gray:#CACACA;
+--very-dark-gray:#333333;
 }
 
 /*Global*/
@@ -110,7 +111,7 @@ line-height: 21px;
 .features-item {
 list-style: none;
 text-align: center;
-  line-height: 21px;
+line-height: 21px;
 }
 
 .search{
@@ -157,12 +158,56 @@ line-height: 24px;
 }
 
 .copyright-link .button:hover,
-.copyright-link .button:focus
-.copyright-link .button:active {
-color: var(--slightly-desaturated-blue;
+.copyright-link .button:focus,
+.copyright-link .button:active{
+  color: var(--slightly-desaturated-blue);
 }
 
+fieldset{
+ line-height: 21px;
+ color: var(--basic-white);
 
+}
 
+legend{
+  font-size: 16px;
+}
+.search_cat{
+ list-style: none;
+}
+.result-search{
+  list-style: none;
+}
+.result-search a:hover,
+.result-search a:focus,
+.result-search a:active{
+color: var(--slightly-desaturated-blue);
+}
 
+.filter-button{
+opacity: 0.0;
+}
+
+.filter-button:hover,
+.button:focus,
+.button:active {
+background-color: var(--basic-white);
+}
+
+.catalog-list{
+list-style: none;
+}
+.catalog-item a {
+color: var(--basic-black);
+}
+.catalog-item h3 {
+  font-size: 26px;
+}
+.catalog-item div{
+  line-height: 24px;
+  color: var(--very-dark-gray);
+}
+.rating{
+  background-color: var(--very-light-gray);
+}
 
