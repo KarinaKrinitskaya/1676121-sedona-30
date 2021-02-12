@@ -40,11 +40,24 @@ img {
   height: auto;
 }
 
-.page-body {
-  background-color: var(--basic-white);
+.container{
+  width: 1200;
+  margin-left:40px;
+  margin-right:40px;
 }
 
+
+.page {
+  height: 100%;
 }
+
+.page-body {
+  background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .button {
   color: var(--basic-white);
   text-transform: uppercase;
@@ -61,13 +74,36 @@ img {
 }
 
 /* Main navigation */
-.main-nav a {
+
+.main-nav-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-weight: bold;
+  list-style: none;
+  height: 56px;
+}
+
+.main-nav-list a {
   color: var(--basic-black);
 }
 
-.main-nav-list {
-  font-weight: bold;
-  list-style: none;
+.inf {
+  grid-column: 1;
+}
+
+.foto {
+  grid-column: 2;
+}
+
+.main-header-logo {
+  grid-column: 3;
+}
+
+.map-state {
+  grid-column: 4;
+}
+.hotels {
+  grid-column: 5;
 }
 
 .main-nav-list a:hover,
@@ -79,6 +115,11 @@ img {
   color: var(--light-gray);
 }
 
+.intro {
+  height: 216px;
+}
+
+
 .intro-title {
   font-size: 21px;
 }
@@ -87,12 +128,34 @@ img {
   background: var(--light-grayish-blue);
   background-image: url(../img/intro-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 509px;
+
 }
 
+.promo img {
+  margin-top: 77px;
+  margin-left: 30px;
+
+}
 /* Features */
 
 .features-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.features-item-image {
+  grid-column: span 2;
 }
 
 .features-item-info {
@@ -116,6 +179,13 @@ img {
   color: var(--basic-white);
 }
 
+.features-sublist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/-1;
+  height: 276px;
+}
+
 .features-sublist .features-item {
   background-color: var(--basic-white);
   list-style: none;
@@ -133,11 +203,29 @@ img {
 .search {
   background-color:var(--basic-white);
   line-height: 24px;
+
+  margin-top: 58px;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 24px;
+}
+
+.search p{
+  padding-top: 50px;
+}
+
+.search-button{
+  width: 568px;
+  height: 86px;
+  margin-top: 50px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: var(--mostly-desaturated-dark-orange);
+  margin-top: 24px;
 }
 
 .map {
@@ -146,7 +234,10 @@ img {
 
 .index-footer-contacts {
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 .footer-visit a {
   font-size: 21px
   color: var(--basic-black);
@@ -160,6 +251,10 @@ img {
 
 .social-list {
   list-style: none;
+  width: 145px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .social-link a {
@@ -198,6 +293,7 @@ img {
   background-color: var(--very-dark-grayish-lime-green);
   background-image: url(../img/filter-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .filter-group {
@@ -233,6 +329,7 @@ img {
 .order a {
   color: var(--light-gray);
 }
+
 .order a:hover,
 .order a:focus{
   color: var(--slightly-desaturated-blue);
