@@ -11,19 +11,20 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" alt="Логотип Седоны" width="138" height="70">
-        </a>
-        <ul class="main-nav-list">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+      <div class="container">
+      <ul class="main-nav-list">
+          <li><a class="inf" href="#">Информация</a></li>
+          <li><a class="foto" href="#">Фото и видео</a></li>
+          <li><a class="main-header-logo">
+            <img src="img/logo.svg" alt="Логотип Седоны" width="138" height="70">
+          </a></li>
+          <li><a class="map-state" href="#">Карта штата</a></li>
+          <li><a class="hotels" href="catalog.html">Гостиницы</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
+      <div class="container">
       <h1 hidden="true">Гостиницы Седоны</h1>
       <section class="filter">
         <h2 hidden="true">Фильтр отелей</h2>
@@ -141,8 +142,10 @@
     </li>
   </ul>
 </section>
+</div>
 </main>
 <footer class="main-footer">
+  <div class="container">
 <div class="index-footer-contacts">
   <div class="footer-visit">
     <p>#visitsedona</p>
@@ -160,6 +163,7 @@
     </li>
   </ul>
   <p class="copyright-link"> Website by <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> </p>
+</div>
 </div>
 </footer>
 </body>
