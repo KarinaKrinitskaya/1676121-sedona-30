@@ -570,5 +570,112 @@ background-color: var(--very-dark-grayish-orange);
   color: var(--very-dark-gray);
 }
 
+.search-form {
+  background-color: var(--basic-white);
+  position: absolute;
+  padding: 55px 61px;
+  align-items: center;
+  margin: auto;
+}
 
+.search-form-date {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.form-data {
+  font-weight: 700;
+}
+
+.form-input-date {
+  border: none;
+  background-color: var(--very-light-gray);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  padding-left: 15px;
+  padding-right: 35px;
+  width: 346px;
+  height: 38px;
+}
+
+.form-input-date:hover{
+  background-color: var(--very-light-gray);
+}
+
+.form-input-date:focus{
+background-color: var(--basic-white);
+border: 2px solid var(--very-light-gray);
+}
+
+.departure-date {
+margin-bottom: 30px;
+}
+
+.form-people-block {
+  display: flex;
+  margin-bottom: 54px;
+justify-content: space-between;
+}
+
+.form-adults-block {
+  display: flex;
+  margin-right: 40px;
+}
+
+.form-children-block {
+  margin-right: 25px;
+  display: flex;
+}
+
+.form-but-minus {
+  border: none;
+  background-color: var(--very-light-gray);
+  width: 38px;
+  height: 38px;
+  text-align: center;
+}
+
+.form-input-num {
+  border: none;
+  background-color: var(--very-light-gray);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.form-but-plus {
+  border: none;
+  background-color: var(--very-light-gray);
+  width: 38px;
+  height: 38px;
+}
+
+.form-label {
+  font-weight: 700;
+  color: var(--basic-black);
+  margin-top: auto;
+}
+
+.form-submit-but {
+ border: none;
+ background-color: var(--slightly-desaturated-blue);
+ color: var(--basic-white);
+ width: 100%;
+ font-size: 21px;
+ text-transform: uppercase;
+ font-weight: 700;
+ height: 58px;
+}
+
+.form-submit-but:hover,
+.form-submit-but:focus {
+  background-color: var(--slightly-desaturated-blue);
+}
+
+.form-submit-but:active {
+  background-color: var(--moderate-blue);
+}
