@@ -37,7 +37,6 @@ a {
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -179,6 +178,7 @@ img {
   margin-right: auto;
   padding-top: 77px;
 }
+
 .promo::after {
   content: "";
   position: absolute;
@@ -208,13 +208,8 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.features-item-image {
-  grid-column: span 2;
-}
-
 .features-item-info {
   line-height: 21px;
-  background-color: var(--slightly-desaturated-blue);
   padding: 47px 52px 54px 47px;
   height: 156px;
 }
@@ -223,7 +218,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   margin-top: 1px;
-  padding: 0 85px;
+  padding: 0 74px;
   margin-left: 4px;
 }
 
@@ -233,7 +228,7 @@ img {
   font-size: 14px;
   font-weight: normal;
   display: flex;
-  margin-top:26px;
+  margin-top: 26px;
   justify-content: center;
 }
 
@@ -245,7 +240,6 @@ img {
   line-height: 21px;
   margin-top: 2px;
   width: 301px;
-
 }
 
 .features-sublist {
@@ -262,32 +256,33 @@ img {
   background-color: var(--basic-very-light-gray);
 }
 
+.features-item.item {
+background-color: var(--slightly-desaturated-blue);
+}
+
 .features-item-house::before {
   background-image:url(../img/icon-house.svg);
   height: 72px;
-  top:60px;
+  top: 60px;
   left: 161px;
   width: 74px;
 }
-
 
 .features-item-food::before {
   background-image:url(../img/icon-burger.svg);
   height: 70px;
-  top:60px;
+  top: 60px;
   left: 161px;
   width: 74px;
 }
-
 
 .features-item-gift::before {
   background-image:url(../img/icon-gift.svg);
   height: 77px;
   width: 64px;
   left: 168px;
-  top:56px;
+  top: 56px;
 }
-
 
 .features-sublist .features-item::before {
   content:'';
@@ -306,7 +301,7 @@ img {
 .features-sublist-title {
   font-size: 21px;
   line-height: 21px;
-  margin:160px 0 24px;
+  margin: 160px 0 24px;
   font-weight: 700;
 }
 
@@ -373,6 +368,10 @@ img {
   display: block;
 }
 
+.map iframe {
+  border: none;
+}
+
 .footer-index {
   align-items: center;
   position: relative;
@@ -393,7 +392,7 @@ img {
   position: absolute;
   width: 100%;
   bottom: 0;
-  height: 120px;
+  padding-top: 10px;
 }
 
 .footer-visit {
@@ -402,13 +401,13 @@ img {
 }
 
 .visitsedona {
-  margin-top: 23px;
+  margin-top: 13px;
   margin-left: 70px;
 }
 
 .footer-tel {
   margin-left: 70px;
-  margin-top: -12px;
+  margin-bottom: 35px;
 }
 
 .footer-visit a {
@@ -433,12 +432,12 @@ img {
   align-items: center;
 }
 
-.social-link {
-  margin: 0 5px;
+.social-item {
+  margin: 0 3px;
   position: relative;
 }
 
-.twitter::before{
+.social-link-twitter::before{
   background-image:url(../img/twitter-logo.svg);
   height: 16px;
   width: 17px;
@@ -446,7 +445,7 @@ img {
   left: 15px;
 }
 
-.facebook::before{
+.social-link-facebook::before{
   background-image:url(../img/fb-icon-logo.svg);
   height: 22px;
   width: 12px;
@@ -454,7 +453,7 @@ img {
   left: 17px;
 }
 
-.youtube::before{
+.social-link-youtube::before{
   background-image:url(../img/youtube-logo.svg);
   height: 16px;
   width: 20px;
@@ -463,13 +462,13 @@ img {
 }
 
 
-.social-link a::before{
+.social-item a::before{
   content: "";
   position: absolute;
 
 }
 
-.social-link a {
+.social-item a {
   color: var(--basic-white);
   background-color: var(--slightly-desaturated-blue);
   display: block;
@@ -478,30 +477,35 @@ img {
   position: relative;
 }
 
-.social-link a:hover,
-.social-link a:focus {
+.social-item a:hover,
+.social-item a:focus {
   background-color: var(--slightly-desaturated-blue-hover);
 }
 
-.social-link a:active {
+.social-item a:active::before {
   opacity:0.3;
   fill: var(--moderate-blue);
 }
 
-.copyright-link b {
-  position: absolute;
-  top: 49px;
-  right: 261px;
-
-}
-.copyright-link a {
-  color: var(--basic-black);
-  margin-right: 8px;
+.copyright-link {
+  margin-top: 43px;
+  margin-left: -195px;
   font-weight: 400;
   line-height: 26px;
+  color: var(--basic-black);
+  position: relative;
 }
 
+.copyright-link a {
+  color: var(--basic-black);
+  position: absolute;
+  top: -50px;
+  left: 340px;
+}
+
+
 .copyright-link svg {
+  position: absolute;
   fill: var(--basic-black);
   margin-top: 41px;
   margin-right: -20px;
@@ -585,8 +589,8 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   border: 2px solid var(--basic-white);
   border-radius: 3px;
 }
@@ -599,12 +603,13 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  width: 21px;
-  height: 16px;
-  background-image: url("../img/check.svg");
+  width: 25px;
+  height: 18px;
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   display: none;
   top:0;
+  z-index: 2;
 }
 
 .filter-group-price {
@@ -789,7 +794,7 @@ margin-bottom: 8px;
   fill: var(--basic-black);
 }
 
-.order svg:active {
+.active svg:active {
   fill: var(--slightly-desaturated-blue);
 }
 
@@ -840,6 +845,15 @@ margin-bottom: 8px;
   margin: 0;
 }
 
+.catalog-item-title a:hover,
+.catalog-item-title a:focus {
+color: var(--slightly-desaturated-blue);
+}
+
+.catalog-item-title a:active {
+color: var(--light-gray);
+}
+
 .catalog-item-wrap {
   line-height: 24px;
   color: var(--very-dark-gray);
@@ -875,7 +889,6 @@ margin-top: 4px;
   margin-right: 6px;
   padding: 3px 16px;
   justify-content: space-between;
-
 }
 
 .detail {
@@ -947,7 +960,6 @@ margin-top: 4px;
 .two-stars {
   margin: 2px 4px 2px 66px;
   width: 40px;
-
 }
 
 .rating p {
@@ -984,6 +996,17 @@ margin-top: 4px;
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.search-form-date .departure{
+  margin-right: 19px;
+  margin-top: -5px;
+  margin-left: 6px;
+}
+
+.search-form-date .departure-date{
+padding-left: 12px;
+border-top: 10px;
 }
 
 .form-date-btn {
@@ -1052,8 +1075,8 @@ margin-top: 4px;
 .form-btn-minus::after {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 13px;
+  top: 15px;
+  left: 17px;
   width: 12px;
   height: 3px;
   background-color: var(--minus-plus-color);
@@ -1086,8 +1109,8 @@ margin-top: 4px;
 .form-btn-plus::after {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 13px;
+  top: 16px;
+  left: 10px;
   width: 12px;
   height: 3px;
   background-color:  var(--minus-plus-color);
@@ -1096,8 +1119,8 @@ margin-top: 4px;
 .form-btn-plus::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: 13px;
+  top: 16px;
+  left: 10px;
   width: 12px;
   height: 3px;
   background-color: var(--minus-plus-color);
@@ -1125,13 +1148,17 @@ margin-top: 4px;
   flex-shrink: 0;
   margin-right: 22px;
   margin-left: 6px;
-
 }
 
 .search-form-half .adult {
   margin-right: 40px;
-
+  margin-top: -5px;
 }
+
+.search-form-half .children {
+  margin-top: -6px;
+}
+
 .form-submit-btn {
   border: none;
   background-color: var(--slightly-desaturated-blue);
@@ -1141,6 +1168,7 @@ margin-top: 4px;
   text-transform: uppercase;
   font-weight: 700;
   height: 58px;
+  margin-left: 5px;
 }
 
 .form-submit-btn:hover,
