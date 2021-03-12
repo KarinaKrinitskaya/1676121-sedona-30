@@ -79,11 +79,11 @@ img {
 
 .button:hover,
 .button:focus {
-  background-color: var(--slightly-desaturated-blue);
+  background-color: var(--very-dark-grayish-orange);
 }
 
 .button:active {
-  background-color: var(--moderate-blue);
+  background-color: var(--very-dark-desaturated-orange);
 }
 
 /* Main navigation */
@@ -94,6 +94,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0 72px;
+  flex-wrap: wrap;
 }
 
 .main-nav-list a {
@@ -112,28 +113,29 @@ img {
 .main-nav li {
   width: 20%;
   padding: 15px 0;
+  box-sizing: border-box;
 }
 
 .main-nav li:nth-child(4n+2) {
   margin-right: 20%;
 }
 
-.main-nav li:nth-child(1),
-.main-nav li:nth-child(2) {
+.main-nav li:nth-child(4n+1),
+.main-nav li:nth-child(4n+2) {
   text-align: left;
 }
 
-.main-nav li:nth-child(3),
-.main-nav li:nth-child(4){
+.main-nav li:nth-child(4n+3),
+.main-nav li:nth-child(4n+4){
   text-align: right;
 }
 
 .main-nav li:nth-child(2) {
-  padding-left: 30px;
+  padding-left: 18px;
 }
 
 .main-nav li:nth-child(3) {
-  padding-right: 30px;
+  padding-right: 16px;
 }
 
   .main-header-logo {
@@ -211,7 +213,7 @@ img {
 .features-item-info {
   line-height: 21px;
   padding: 47px 52px 54px 47px;
-  height: 156px;
+  height: 155px;
 }
 
 .features-item-title {
@@ -238,7 +240,7 @@ img {
 
 .features-item-info  p {
   line-height: 21px;
-  margin-top: 2px;
+  margin-top: 23px;
   width: 301px;
 }
 
@@ -329,7 +331,7 @@ background-color: var(--slightly-desaturated-blue);
 .search {
   background-color:var(--basic-white);
   line-height: 24px;
-  padding-top: 58px;
+  padding-top: 60px;
 }
 
 .search-title {
@@ -362,6 +364,7 @@ background-color: var(--slightly-desaturated-blue);
 
 .map {
   background-color: var(--light-grayish-orange);
+  height: 594px;
 }
 
 .map img {
@@ -403,11 +406,13 @@ background-color: var(--slightly-desaturated-blue);
 .visitsedona {
   margin-top: 13px;
   margin-left: 70px;
+  margin-bottom: 10px;
 }
 
 .footer-tel {
   margin-left: 70px;
   margin-bottom: 35px;
+  margin-top: 10px;
 }
 
 .footer-visit a {
@@ -426,7 +431,7 @@ background-color: var(--slightly-desaturated-blue);
   list-style: none;
   justify-content: center;
   display: flex;
-  margin: 0;
+  margin-top: 1px;
   padding: 0;
   flex-wrap: wrap;
   align-items: center;
@@ -488,27 +493,27 @@ background-color: var(--slightly-desaturated-blue);
 }
 
 .copyright-link {
-  margin-top: 43px;
-  margin-left: -195px;
+
   font-weight: 400;
   line-height: 26px;
   color: var(--basic-black);
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -70px;
+margin-top: -10px;
 }
 
 .copyright-link a {
   color: var(--basic-black);
-  position: absolute;
-  top: -50px;
-  left: 340px;
+  margin-left: 9px;
+margin-top: 8px;
 }
 
 
 .copyright-link svg {
-  position: absolute;
   fill: var(--basic-black);
-  margin-top: 41px;
-  margin-right: -20px;
+
 }
 
 .copyright-link svg:hover,
@@ -1017,6 +1022,7 @@ border-top: 10px;
   background-color: transparent;
   width: 21px;
   height: 23px;
+  cursor: pointer;
 }
 
 .form-date-btn svg {
@@ -1075,8 +1081,8 @@ border-top: 10px;
 .form-btn-minus::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
+  left: 16px;
+  top:17px;
   width: 12px;
   height: 3px;
   background-color: var(--minus-plus-color);
@@ -1089,7 +1095,7 @@ border-top: 10px;
   text-transform: uppercase;
   color: var(--basic-black);
   text-align: center;
-  width: 38px;
+  width: 35px;
   height: 36px;
 }
 
@@ -1109,8 +1115,8 @@ border-top: 10px;
 .form-btn-plus::after {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 10px;
+  top: 17px;
+  left: 13px;
   width: 12px;
   height: 3px;
   background-color:  var(--minus-plus-color);
@@ -1119,8 +1125,8 @@ border-top: 10px;
 .form-btn-plus::before {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 10px;
+  top: 17px;
+  left: 13px;
   width: 12px;
   height: 3px;
   background-color: var(--minus-plus-color);
@@ -1157,6 +1163,7 @@ border-top: 10px;
 
 .search-form-half .children {
   margin-top: -6px;
+  margin-right: 26px;
 }
 
 .form-submit-btn {
