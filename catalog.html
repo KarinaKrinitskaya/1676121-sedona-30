@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="container">
@@ -20,7 +20,7 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a class="active" href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -68,9 +68,9 @@
           <fieldset class="filter-group-price">
             <legend>Стоимость в сутки (P):</legend>
             <div class="price">
-              <label class="min-price">От 0<span class="item-price" type="range" name="min-price" value="0">
+              <label class="min-price">От<input class="item-price" type="number" name="min-price" value="0">
               </label>
-              <label class="max-price">До 3000<span class="item-price" type="range" name="min-price" value="3000">
+              <label class="max-price">До<input class="item-price" type="number" name="max-price" value="3000">
               </label>
             </div>
             <div class="price-range-filter">
@@ -87,11 +87,11 @@
       <section class="catalog">
         <h2 hidden="true">Результат поиска</h2>
         <div class="sort">
-          <b class="sort-title">Найдено 3</b>
+          <b class="sort-title">Найдено: 3</b>
           <span class="sort-text">Сортировка:</span>
           <ul class="sort-list">
             <li class="sort-option">
-              <a href="#">По цене</a>
+              <a class="active">По цене</a>
             </li>
             <li class="sort-option">
               <a href="#">По типу</a>
@@ -101,12 +101,12 @@
             </li>
           </ul>
           <div class="order">
-            <a class="active" href="#">
+            <a class="order-link" href="#">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L0 10H11L5.5 0Z"/>
               </svg>
             </a>
-            <a class="active" href="#">
+            <a class="order-link active">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11"/>
               </svg>
@@ -124,7 +124,7 @@
                 <p class="catalog-item-type">Гостиница</p>
                 <p class="catalog-item-price">от 4000 Р</p>
                 <a href="#" class="catalog-item-button detail">Подробнее</a>
-                <a href="#" class=" catalog- item-button res">Забронировать</a>
+                <a href="#" class=" catalog-item-button res">Забронировать</a>
               </div>
             </div>
             <div class="rating">
@@ -158,7 +158,7 @@
                 <p class="catalog-item-type">Апартаменты</p>
                 <p class="catalog-item-price">от 2000 Р</p>
                 <a href="#" class="catalog-item-button detail">Подробнее</a>
-                <a href="#" class=" catalog- item-button res">Забронировать</a>
+                <a href="#" class=" catalog-item-button res">Забронировать</a>
               </div>
             </div>
             <div class="rating">
@@ -173,7 +173,7 @@
       <div class="footer-catalog">
         <div class="catalog-footer-contacts">
           <div class="footer-visit">
-            <p class="visitsedona">#visitsedona</p>
+            <p class="visitsedona-catalog">#visitsedona</p>
             <p class="footer-tel">Тел:<a href="tel:+74956660166"> +7 (495) 666-01-66</a></p>
           </div>
           <ul class="social-list">

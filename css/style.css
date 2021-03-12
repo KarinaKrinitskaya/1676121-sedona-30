@@ -110,6 +110,10 @@ img {
   color: var(--light-gray);
 }
 
+.main-nav-list .active {
+  color: var(--mostly-desaturated-dark-orange);
+}
+
 .main-nav li {
   width: 20%;
   padding: 15px 0;
@@ -384,6 +388,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   opacity:1;
+  height: 129px;
 }
 
 .index-footer-contacts {
@@ -408,6 +413,10 @@ img {
   margin-bottom: 10px;
 }
 
+.visitsedona-catalog {
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
 .footer-tel {
   margin-left: 70px;
   margin-bottom: 35px;
@@ -438,7 +447,6 @@ img {
 
 .social-item {
   margin: 0 3px;
-  position: relative;
 }
 
 .social-link-twitter::before{
@@ -492,7 +500,6 @@ img {
 }
 
 .copyright-link {
-
   font-weight: 400;
   line-height: 26px;
   color: var(--basic-black);
@@ -509,10 +516,8 @@ img {
   margin-top: 8px;
 }
 
-
 .copyright-link svg {
   fill: var(--basic-black);
-
 }
 
 .copyright-link svg:hover,
@@ -599,21 +604,12 @@ img {
   border-radius: 3px;
 }
 
-.filter-input:checked + label::after {
+.filter-input-checkbox:checked + label::before {
+  border: 0;
+  background-image: url(../img/checkbox-on.svg);
   display: block;
-}
-
-.filter-input + label::after {
-  content: "";
-  position: absolute;
-  left: 0;
   width: 25px;
-  height: 18px;
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  display: none;
-  top:0;
-  z-index: 2;
+  height: 23px;
 }
 
 .filter-group-price {
@@ -629,10 +625,10 @@ img {
 }
 
 .filter-group-price legend {
-font-weight: 700;
-position: absolute;
-font-size: 16px;
-margin-bottom: 8px;
+  font-weight: 700;
+  position: absolute;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .price {
@@ -647,11 +643,11 @@ margin-bottom: 8px;
 }
 
 .min-price {
-  margin-left: 11px;
+  margin-left: 28px;
 }
 
 .max-price {
-  margin-right: -6px;
+  margin-right: -9px;
 }
 
 .price::after {
@@ -676,7 +672,6 @@ margin-bottom: 8px;
   margin: 0;
   color: inherit;
   font: inherit;
-  text-align: center;
   background: none;
   border: none;
 }
@@ -739,7 +734,7 @@ margin-bottom: 8px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 29px;
+  margin-top: 28px;
 }
 
 .sort-text {
@@ -779,6 +774,12 @@ margin-bottom: 8px;
   text-decoration: none;
 }
 
+.sort-option .active {
+  color: var(--slightly-desaturated-blue);
+  border: none;
+  text-decoration: none;
+}
+
 .order {
   margin-left: auto;
   padding-top: 32px;
@@ -798,9 +799,14 @@ margin-bottom: 8px;
   fill: var(--basic-black);
 }
 
-.active svg:active {
+.order-link svg:active {
   fill: var(--slightly-desaturated-blue);
 }
+
+.order-link.active svg {
+  fill: var(--slightly-desaturated-blue);
+}
+
 
 .filter-button {
   background-color: transparent;
@@ -826,7 +832,7 @@ margin-bottom: 8px;
 }
 
 .catalog-item {
-  padding: 24px 0;
+  padding: 23px 0;
   display: flex;
   flex-wrap: nowrap;
   border-bottom: 1px dotted var(--very-light-gray);
@@ -837,6 +843,7 @@ margin-bottom: 8px;
 .catalog-item img {
   overflow: hidden;
   margin-right: 29px;
+  margin-top: 3px;
 }
 
 .catalog-item-title a {
@@ -885,12 +892,14 @@ margin-bottom: 8px;
 }
 
 .catalog-item-price {
-  margin: 0px;
+  margin-top: 5px;
+  margin-left: -19px;
 }
 
 .catalog-item-button {
   display: flex;
-  margin-right: 6px;
+  margin-right: 8px;
+  margin-bottom: 10px;
   padding: 3px 16px;
   justify-content: space-between;
 }
@@ -936,7 +945,6 @@ margin-bottom: 8px;
 }
 
 .rating {
-
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -971,7 +979,6 @@ margin-bottom: 8px;
   color: var(--very-dark-gray);
   width: 110px;
   margin-top: 50px;
-
 }
 
 .search-form {
