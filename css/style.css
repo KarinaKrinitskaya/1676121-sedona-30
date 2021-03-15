@@ -608,7 +608,7 @@ img {
   border: 0;
   background-image: url(../img/checkbox-on.svg);
   display: block;
-  width: 25px;
+  width: 27px;
   height: 23px;
 }
 
@@ -674,6 +674,12 @@ img {
   font: inherit;
   background: none;
   border: none;
+}
+
+.price input::-webkit-outer-spin-button,
+.price input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .price-range-filter {
@@ -982,9 +988,14 @@ img {
 }
 
 .search-form {
+  display: none;
   width: 463px;
   position: relative;
   margin: 0 auto;
+}
+
+.modal-show {
+  display: block;
 }
 
 .search-form-block {

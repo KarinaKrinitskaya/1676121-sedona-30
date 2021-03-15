@@ -20,15 +20,15 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a class="active" href="#">Гостиницы</a></li>
+            <li><a class="active">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <main>
-        <h1 hidden="true">Гостиницы Седоны</h1>
+        <h1 class="visually-hidden">Гостиницы Седоны</h1>
         <section class="filter">
-          <h2 hidden="true">Фильтр отелей</h2>
-          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru/">
+          <h2 class="visually-hidden">Фильтр отелей</h2>
+          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
             <div class="filter-search">
               <fieldset class="filter-group">
                 <legend class="filter-title">Инфраструктура:</legend>
@@ -85,7 +85,7 @@
         </form>
       </section>
       <section class="catalog">
-        <h2 hidden="true">Результат поиска</h2>
+        <h2 class="visually-hidden">Результат поиска</h2>
         <div class="sort">
           <b class="sort-title">Найдено: 3</b>
           <span class="sort-text">Сортировка:</span>
@@ -116,7 +116,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="#">
-              <img src="img/catalog-picture-hotel-four-stars.jpg" alt="Amara Resort & Spa" width="135" height="90">
+              <img src="img/catalog-picture-hotel-four-stars.jpg" alt="Amara Resort & Spa" width="135" height="90" alt="Здание в горах, окружено лиственным лесом">
             </a>
             <div class="catalog-item-wrap">
               <h3 class="catalog-item-title"><a href="#">Amara Resort & Spa</a></h3>
@@ -133,7 +133,8 @@
             </div>
           </li>
           <li class="catalog-item">
-            <a href="#"><img src="img/catalog-picture-hotel-three-stars.jpg" alt="Desert Quail Inn" width="135" height="90">
+            <a href="#">
+              <img src="img/catalog-picture-hotel-three-stars.jpg" alt="Desert Quail Inn" width="135" height="90" alt="Здание в пустыне у дороги">
             </a>
             <div class="catalog-item-wrap" >
               <h3 class="catalog-item-title"><a href="#">Desert Quail Inn</a></h3>
@@ -150,7 +151,8 @@
             </div>
           </li>
           <li class="catalog-item">
-            <a href="#"><img src="img/catalog-picture-hotel-two-stars.jpg" alt="Villas At Poco Diablo" width="135" height="90">
+            <a href="#">
+              <img src="img/catalog-picture-hotel-two-stars.jpg" alt="Villas At Poco Diablo" width="135" height="90" alt="Дом с ухоженным газоном рядом">
             </a>
             <div class="catalog-item-wrap">
               <h3 class="catalog-item-title"><a href="#">Villas At Poco Diablo</a></h3>
@@ -178,13 +180,19 @@
           </div>
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link social-link-twitter" href="#"></a>
+              <a class="social-link social-link-twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
             </li>
             <li class="social-item">
-              <a class="social-link social-link-facebook" href="#"></a>
+              <a class="social-link social-link-facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="social-item">
-              <a  class="social-link social-link-youtube" href="#"></a>
+              <a  class="social-link social-link-youtube" href="#">
+                <span class="visually-hidden">Ютьюб</span>
+              </a>
             </li>
           </ul>
           <div class="copyright-link"> <b>Website by</b> <a href="https://up.htmlacademy.ru/htmlcss/30">
