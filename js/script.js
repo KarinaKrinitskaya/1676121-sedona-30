@@ -1,21 +1,39 @@
 const link = document.querySelector(".search-button");
-const popup = document.querySelector(".search-form");
+const popup = document.querySelector(".search-form-block");
 const arrival = popup.querySelector("[name=arrival]");
 const departure = popup.querySelector("[name=departure]");
+
+let isStorageSupport = true;
+let storageArrival = "";
+let storageDeparture = "";
+
+try {
+  storageArrival = localStorage.getItem("arrival");
+  storageDeparture = localStorage.getItem("departure");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("display-none");
   popup.classList.add("modal-show");
+  if (storageArrival && storageDeparture){
+    arrival.value = storageArrival;
+    departure.value = storageDeparture;
   arrival.focus();
+}
 });
 
 popup.addEventListener("submit", function (evt) {
   if (!arrival.value || !departure.value) {
-    evt.preventDefault();}
-else {
-    localStorage.setItem("arrival", larrival.value);
+    evt.preventDefault();
+  } else {
+  if (isStorageSupport) {
+    localStorage.setItem("arrival", arrival.value);
+    localStorage.setItem("departure", departure.value);
     }
+  }
 });
 
 window.addEventListener("keydown", function (evt) {

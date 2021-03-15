@@ -167,7 +167,7 @@ img {
   width: 540px;
   margin:0 auto;
   margin-bottom: 53px;
-  padding-top: 20px;
+  padding-top: 23px;
 }
 
 .promo {
@@ -243,7 +243,6 @@ img {
 
 .features-item-info  p {
   line-height: 21px;
-  margin-top: 23px;
   width: 301px;
 }
 
@@ -342,13 +341,13 @@ img {
   line-height: 24px;
   margin-bottom: 4px;
   margin-top: -5px;
-  margin-left: -15px;
+  margin-left: -9px;
 }
 
 .search p {
   margin-top: 34px;
-  margin-bottom: -6px;
-  padding-left: 380px;
+  margin-bottom: -7px;
+  padding-left: 375px;
   padding-right: 370px;
   width: 450px;
 }
@@ -367,7 +366,7 @@ img {
 
 .map {
   background-color: var(--light-grayish-orange);
-  height: 594px;
+  height: 593px;
 }
 
 .map img {
@@ -988,20 +987,34 @@ img {
 }
 
 .search-form {
-  display: none;
   width: 463px;
   position: relative;
   margin: 0 auto;
 }
 
+.search-form .display-none {
+display: none;
+}
+
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce{
+ 0% {
+  opacity: 0;
+    }
+
+  100% {
+  opacity: 1;
+    }
 }
 
 .search-form-block {
   background-color: var(--basic-white);
   position: absolute;
-  padding: 53px 55px 53px 49px;
+  padding: 52px 55px 53px 49px;
   align-items: center;
   left: 50%;
   transform: translateX(-50%);
