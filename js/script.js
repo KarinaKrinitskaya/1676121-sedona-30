@@ -1,5 +1,5 @@
 const link = document.querySelector(".search-button");
-const popup = document.querySelector(".search-form-block");
+const popup = document.querySelector(".search-form");
 const arrival = popup.querySelector("[name=arrival]");
 const departure = popup.querySelector("[name=departure]");
 
@@ -16,9 +16,9 @@ try {
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.toggle("display-none");
-  popup.classList.add("modal-show");
-  if (storageArrival && storageDeparture){
+  popup.classList.toggle("modal-show");
+  if (popup.classList.contains("modal-show")
+    && storageArrival && storageDeparture) {
     arrival.value = storageArrival;
     departure.value = storageDeparture;
   arrival.focus();
@@ -28,6 +28,9 @@ link.addEventListener("click", function (evt) {
 popup.addEventListener("submit", function (evt) {
   if (!arrival.value || !departure.value) {
     evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
   } else {
   if (isStorageSupport) {
     localStorage.setItem("arrival", arrival.value);

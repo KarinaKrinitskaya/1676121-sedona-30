@@ -334,6 +334,7 @@ img {
   background-color:var(--basic-white);
   line-height: 24px;
   padding-top: 60px;
+  position: relative;
 }
 
 .search-title {
@@ -380,6 +381,7 @@ img {
 .footer-index {
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .catalog-footer-contacts {
@@ -959,14 +961,15 @@ img {
 
 .stars {
   background-image: url(../img/star.svg);
-  background-repeat: repeat-x;
+  background-repeat: space;
   background-position: right;
-  height: 18px;
+  height: 17px;
 }
 
 .four-stars {
-  width: 77px;
-  margin: 2px 4px 2px 33px;
+  width: 90px;
+  margin: auto;
+  padding-top: 10px;
 }
 
 .three-stars {
@@ -987,42 +990,53 @@ img {
 }
 
 .search-form {
-  width: 463px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.search-form .display-none {
-display: none;
-}
-
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
-@keyframes bounce{
- 0% {
-  opacity: 0;
-    }
-
-  100% {
-  opacity: 1;
-    }
-}
-
-.search-form-block {
   background-color: var(--basic-white);
   position: absolute;
+  width: 464px;
+  bottom: -193px;
   padding: 52px 55px 53px 49px;
   align-items: center;
+  margin: 0 -284px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 1;
+  transform: translateY(-100%);
+}
+
+.modal-show {
+  animation: slide 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes slide {
+  0% {
+  transform: translateY(-100%);
+  opacity: 0;
+    }
+
+  100% {
+    transform: translateY(0);
+  opacity: 1;
+    }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+    }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+    }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+    }
 }
 
 .search-form-date {
