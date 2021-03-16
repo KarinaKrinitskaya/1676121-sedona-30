@@ -381,7 +381,6 @@ img {
 .footer-index {
   align-items: center;
   position: relative;
-  overflow: hidden;
 }
 
 .catalog-footer-contacts {
@@ -475,10 +474,9 @@ img {
 }
 
 
-.social-item a::before{
+.social-item a::before {
   content: "";
   position: absolute;
-
 }
 
 .social-item a {
@@ -771,7 +769,7 @@ img {
 }
 
 .sort-option a:hover,
-.sort-option a:focus{
+.sort-option a:focus {
   color: var(--slightly-desaturated-blue);
 }
 
@@ -923,7 +921,7 @@ img {
 }
 
 .detail:hover,
-.detail:focus{
+.detail:focus {
   background-color: var(--slightly-desaturated-blue);
 }
 
@@ -995,7 +993,7 @@ img {
   background-color: var(--basic-white);
   position: absolute;
   width: 464px;
-  bottom: -193px;
+  bottom: -393px;
   padding: 52px 55px 53px 49px;
   align-items: center;
   margin: 0 -284px;
@@ -1004,7 +1002,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 1;
-  transform: translateY(-100%);
 }
 
 .modal-show {
@@ -1017,13 +1014,13 @@ img {
 
 @keyframes slide {
   0% {
-  transform: translateY(-100%);
-  opacity: 0;
+    transform-origin: 0 0;
+    transform: scaleY(0);
     }
 
   100% {
-    transform: translateY(0);
-  opacity: 1;
+    transform-origin: 0 0;
+  transform: scaleY(1);
     }
 }
 
@@ -1112,7 +1109,6 @@ img {
   display: flex;
   margin-bottom: 54px;
   align-items: center;
-
 }
 
 .form-btn-minus {
@@ -1183,14 +1179,14 @@ img {
 .form-btn-minus:focus::after,
 .form-btn-plus:hover::after,
 .form-btn-plus:hover::before,
-.form-btn-plus:focus::before{
+.form-btn-plus:focus::before {
   background-color: var(--basic-black);
 }
 
 .form-btn-minus:active::after,
 .form-btn-plus:active::after,
 .form-btn-plus:active::before,
-.form-btn-plus:active::before{
+.form-btn-plus:active::before {
   background-color: var(--slightly-desaturated-blue);
 }
 

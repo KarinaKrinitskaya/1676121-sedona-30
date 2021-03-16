@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="container">
@@ -80,49 +80,49 @@
         <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, <br >и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="search-button button" tabindex="0" aria-label="Форма поиска гостиницы в Седоне">Поиск гостиницы в Седоне</button>
+          <button class="search-button button" aria-label="Форма поиска гостиницы в Седоне">Поиск гостиницы в Седоне</button>
+          <form class="search-form modal-show" method="get" action="https://echo.htmlacademy.ru/">
+            <div class="search-form-date">
+              <label for="arrival-date" class="form-label">Дата заезда:</label>
+              <input type="text" id="arrival-date" name="arrival" placeholder="24 Апреля 2017" class="form-input-date">
+              <button class="form-date-btn" type="button" aria-label="Выбрать дату заезда">
+              <svg  width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
+              </svg>
+              </button>
+            </div>
+            <div class="search-form-date">
+              <label for="departure-date" class="form-label departure">Дата выезда:</label>
+              <input type="text" id="departure-date" name="departure" placeholder="4 Июля 2017" class="form-input-date departure-date">
+              <button class="form-date-btn" type="button" aria-label="Выбрать дату выезда">
+              <svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
+              </svg>
+              </button>
+            </div>
+            <div class="search-form-half">
+              <label for="adult" class="form-label adult">Взрослые:</label>
+              <button type="button" class="form-btn-minus" aria-label="Уменьшить количество взрослых">
+              </button>
+              <input id="adult" type="number" min="1" max="10" name="adult" value="2" id="adult" class="form-input-num" placeholder="">
+              <button type="button" class="form-btn-plus" aria-label="Увеличить количество взрослых">
+              </button>
+            </div>
+            <div class="search-form-half">
+              <label for="children" class="form-label children">Дети:</label>
+              <button type="button" class="form-btn-minus" aria-label="Уменьшить количество детей">
+              </button>
+              <input id="children" type="number" min="1" max="10" name="children" value="2" id="children" class="form-input-num" placeholder="">
+              <button type="button" class="form-btn-plus" aria-label="Увеличить количество детей">
+              </button>
+            </div>
+            <button type="submit" class="form-submit-btn">Найти</button>
+          </form>
         </section>
       </main>
       <footer class="footer-index">
-        <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
-              <div class="search-form-date">
-                <label for="arrival-date" class="form-label">Дата заезда:</label>
-                <input type="text" id="arrival-date" name="arrival" placeholder="24 Апреля 2017" class="form-input-date">
-                <button class="form-date-btn" type="button" aria-label="Выбрать дату заезда">
-                <svg  width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
-                </svg>
-                </button>
-              </div>
-              <div class="search-form-date">
-                <label for="departure-date" class="form-label departure">Дата выезда:</label>
-                <input type="text" id="departure-date" name="departure" placeholder="4 Июля 2017" class="form-input-date departure-date">
-                <button class="form-date-btn" type="button" aria-label="Выбрать дату выезда">
-                <svg width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
-                </svg>
-                </button>
-              </div>
-              <div class="search-form-half">
-                <label for="adult" class="form-label adult">Взрослые:</label>
-                <button type="button" class="form-btn-minus" aria-label="Уменьшить количество взрослых">
-                </button>
-                <input id="adult" type="number" min="1" max="10" name="adult" value="2" id="adult" class="form-input-num" placeholder="">
-                <button type="button" class="form-btn-plus" aria-label="Увеличить количество взрослых">
-                </button>
-              </div>
-              <div class="search-form-half">
-                <label for="children" class="form-label children">Дети:</label>
-                <button type="button" class="form-btn-minus" aria-label="Уменьшить количество детей">
-                </button>
-                <input id="children" type="number" min="1" max="10" name="children" value="2" id="children" class="form-input-num" placeholder="">
-                <button type="button" class="form-btn-plus" aria-label="Увеличить количество детей">
-                </button>
-              </div>
-              <button type="submit" class="form-submit-btn">Найти</button>
-          </form>
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24251.513443435008!2d-111.78184863849302!3d34.868655690109925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sby!4v1615396646571!5m2!1sru!2sby" allowfullscreen title="Карта Седоны" width="1200" height="594"></iframe>
         </div>
@@ -151,9 +151,9 @@
             </svg>
           </a>
         </div>
-        </div>
-      </footer>
-    </div>
-    <script src="js/script.js"></script>
-  </body>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
 </html>

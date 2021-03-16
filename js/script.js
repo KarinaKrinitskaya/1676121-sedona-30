@@ -14,6 +14,7 @@ try {
   isStorageSupport = false;
 }
 
+popup.classList.remove("modal-show");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
