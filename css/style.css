@@ -968,18 +968,20 @@ img {
 
 .four-stars {
   width: 90px;
-  margin: auto;
+  margin: 1px 1px -10px 21px;
   padding-top: 10px;
 }
 
 .three-stars {
-  margin: 2px 4px 2px 46px;
+  margin: 1px 1px -10px 49px;
   width: 60px;
+  padding-top: 10px;
 }
 
 .two-stars {
-  margin: 2px 4px 2px 66px;
+  margin: 1px 1px -10px 69px;
   width: 40px;
+  padding-top: 10px;
 }
 
 .rating p {
