@@ -101,7 +101,7 @@ img {
   color: var(--basic-black);
 }
 
-.main-nav-list a:hover,
+.main-nav-list a[href]:hover,
 .main-nav-list a:focus {
   color: var(--slightly-desaturated-blue);
 }
@@ -609,6 +609,14 @@ img {
   display: block;
   width: 27px;
   height: 23px;
+}
+
+.filter-input-checkbox:focus + label {
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:disabled +label::before {
+  opacity: 0.3;
 }
 
 .filter-group-price {
@@ -1139,6 +1147,11 @@ img {
   text-align: center;
   width: 35px;
   height: 36px;
+}
+
+.form-input-num:focus {
+  background-color: var(--basic-white);
+  border-color:  var(--very-light-gray);
 }
 
 .form-input-num[type="number"]::-webkit-outer-spin-button,
