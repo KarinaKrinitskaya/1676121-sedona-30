@@ -18,6 +18,7 @@ popup.classList.remove("modal-show");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
+  popup.classList.toggle("display-none");
   if (popup.classList.contains("modal-show")
     && storageArrival && storageDeparture) {
     arrival.value = storageArrival;

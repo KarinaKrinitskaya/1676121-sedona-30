@@ -215,8 +215,11 @@ img {
 
 .features-item-info {
   line-height: 21px;
-  padding: 47px 52px 54px 47px;
-  height: 155px;
+  padding: 47px 52px 5px 47px;
+}
+
+.features-item-info-gray {
+min-height: 204px;
 }
 
 .features-item-title {
@@ -620,7 +623,6 @@ img {
 }
 
 .filter-group-price {
-  margin-left: auto;
   width: 318px;
   margin: 0;
   padding: 0;
@@ -628,7 +630,7 @@ img {
   line-height: 21px;
   color: var(--basic-white);
   border: none;
-  margin-top: 26px;
+  margin-left: 226px;
 }
 
 .filter-group-price legend {
@@ -681,6 +683,10 @@ img {
   font: inherit;
   background: none;
   border: none;
+}
+
+.price input[type="number"] {
+  -moz-appearance:textfield;
 }
 
 .price input::-webkit-outer-spin-button,
@@ -743,7 +749,6 @@ img {
 
 .sort-title {
   margin-right: 46px;
-  width: 117px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -881,9 +886,6 @@ img {
 .catalog-item-wrap {
   line-height: 24px;
   color: var(--very-dark-gray);
-  display: flex;
-  flex-wrap: wrap;
-  width: 270px;
 }
 
 .catalog-item-wrap p {
@@ -1018,6 +1020,10 @@ img {
 
 .modal-error {
   animation: shake 0.6s;
+}
+
+.display-none {
+  display: none;
 }
 
 @keyframes slide {
