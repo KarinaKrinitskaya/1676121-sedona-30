@@ -612,10 +612,10 @@ img {
 }
 
 .filter-input-checkbox:focus + label {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
-.filter-input-checkbox:disabled +label::before {
+.filter-input-checkbox:disabled + .filter-label {
   opacity: 0.3;
 }
 
