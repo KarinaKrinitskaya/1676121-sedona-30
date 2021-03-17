@@ -856,6 +856,7 @@ min-height: 204px;
   border-bottom: 1px dotted var(--very-light-gray);
   padding-left: 73px;
   padding-right: 73px;
+  text-align: left;
 }
 
 .catalog-item img {
@@ -908,8 +909,9 @@ min-height: 204px;
 
 .catalog-item-price {
   margin-top: 5px;
-  margin-left: -19px;
+  margin-left: -59px;
 }
+
 
 .catalog-item-button {
   display: flex;
@@ -997,6 +999,7 @@ min-height: 204px;
   color: var(--very-dark-gray);
   width: 110px;
   margin-top: 50px;
+  text-align: center;
 }
 
 .search-form {
@@ -1158,6 +1161,10 @@ min-height: 204px;
 .form-input-num:focus {
   background-color: var(--basic-white);
   border-color:  var(--very-light-gray);
+}
+
+.form-input-num[type="number"] {
+  -moz-appearance:textfield;
 }
 
 .form-input-num[type="number"]::-webkit-outer-spin-button,
