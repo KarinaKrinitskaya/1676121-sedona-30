@@ -894,13 +894,12 @@ min-height: 204px;
 }
 
 .catalog-item-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 117px 149px;
 }
 
 .catalog-item-wrapper p {
   text-align: left;
-  width: 50%;
 }
 
 .catalog-item-type {
@@ -909,7 +908,6 @@ min-height: 204px;
 
 .catalog-item-price {
   margin-top: 5px;
-  margin-left: -59px;
 }
 
 
