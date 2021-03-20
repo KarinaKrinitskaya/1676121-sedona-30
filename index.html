@@ -5,17 +5,17 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="container">
       <header class="main-header">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" alt="Логотип Седоны" width="138" height="70">
+        </a>
         <nav class="main-nav">
-          <a class="main-header-logo">
-            <img src="img/logo.svg" alt="Логотип Седоны" width="138" height="70">
-          </a>
           <ul class="main-nav-list">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
@@ -65,22 +65,22 @@
             </li>
             <li class="features-item-info features-item features-item-info-gray">
               <h3 class="features-item-title ">Небольшая площадь</h3>
-              <p>Все достопримечательности <br>находятся очень близко</p>
+              <p>Все&nbsp;достопримечательности находятся&nbsp;очень близко</p>
             </li>
             <li class="features-item-info features-item">
               <h3 class="features-item-title">Красивая дорога</h3>
-              <p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
             </li>
             <li class="features-item-info features-item">
               <h3 class="features-item-title">Мало туристов</h3>
-              <p>Большинтсво едет в гранд каньон <br>и толпится там</p>
+              <p>Большинтсво едет в гранд каньон и&nbsp;толпится там</p>
             </li>
           </ol>
         </section>
         <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, <br >и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="search-button button" aria-label="Форма поиска гостиницы в Седоне">Поиск гостиницы в Седоне</button>
+          <a href="form.html" class="search-button button" aria-label="Кнопка открытия формы">Поиск гостиницы в Седоне</a>
           <form class="search-form modal-show display-none" method="get" action="https://echo.htmlacademy.ru/">
             <div class="search-form-date">
               <label for="arrival-date" class="form-label">Дата заезда:</label>

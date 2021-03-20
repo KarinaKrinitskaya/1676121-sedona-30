@@ -11,13 +11,16 @@
 --moderate-blue: #5496BD;
 --very-dark-grayish-orange: #604E43;
 --very-dark-desaturated-orange: #503E33;
---very-light-gray: #EBEBEB;
+--very-light-gray-hover: #EBEBEB;
 --light-gray: #CACACA;
 --light-grayish-blue: #e4f1f9;
 --light-grayish-orange: #e9e5dc;
 --very-dark-grayish-lime-green: #2a3e45;
 --very-dark-gray: #666666;
 --minus-plus-color:#A9A9A9;
+--gray-toogle:#ABABAB;
+--container-shadow:rgba(0, 1, 1, 0.2);
+--footer-color:rgba(255, 255, 255, 0.9);
 }
 
 /*Global*/
@@ -62,7 +65,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--basic-white);
-  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 0 15px var(--container-shadow);
 }
 
 .page-body {
@@ -84,9 +87,14 @@ img {
 
 .button:active {
   background-color: var(--very-dark-desaturated-orange);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Main navigation */
+
+.main-header {
+  position: relative;
+}
 
 .main-nav-list {
   font-weight: bold;
@@ -106,7 +114,7 @@ img {
   color: var(--slightly-desaturated-blue);
 }
 
-.main-nav-list a:active {
+.main-nav-list a[href]:active {
   color: var(--light-gray);
 }
 
@@ -142,7 +150,7 @@ img {
   padding-right: 16px;
 }
 
-  .main-header-logo {
+.main-header-logo {
   position: absolute;
   top:0;
   left: 50%;
@@ -338,34 +346,35 @@ min-height: 204px;
   line-height: 24px;
   padding-top: 60px;
   position: relative;
+  padding: 0px 316px;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 24px;
   margin-bottom: 4px;
-  margin-top: -5px;
+  margin-top: 55px;
   margin-left: -9px;
 }
 
 .search p {
   margin-top: 34px;
   margin-bottom: -7px;
-  padding-left: 375px;
+  padding-left: 57px;
   padding-right: 370px;
   width: 450px;
 }
 
-.search-button {
-  width: 568px;
-  height: 86px;
-  margin-top: 50px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
+.search a {
+  display: block;
+  margin-top: 47px ;
+  padding: 32px 0;
+  text-decoration: none;
   color: var(--basic-white);
   background-color: var(--mostly-desaturated-dark-orange);
-  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
 }
 
 .map {
@@ -387,7 +396,7 @@ min-height: 204px;
 }
 
 .catalog-footer-contacts {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--footer-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   opacity:1;
@@ -395,14 +404,15 @@ min-height: 204px;
 }
 
 .index-footer-contacts {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--footer-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   opacity:1;
   position: absolute;
+  margin-top: 5px;
   width: 100%;
   bottom: 0;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .footer-visit {
@@ -423,7 +433,7 @@ min-height: 204px;
 .footer-tel {
   margin-left: 70px;
   margin-bottom: 35px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .footer-visit a {
@@ -442,10 +452,10 @@ min-height: 204px;
   list-style: none;
   justify-content: center;
   display: flex;
-  margin-top: 1px;
   padding: 0;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 5px;
 }
 
 .social-item {
@@ -509,7 +519,7 @@ min-height: 204px;
   align-items: center;
   justify-content: center;
   margin-left: -70px;
-  margin-top: -10px;
+  margin-top: -9px;
 }
 
 .copyright-link a {
@@ -550,11 +560,7 @@ min-height: 204px;
   display: flex;
   justify-content:space-between;
   align-items: flex-start;
-}
-
-.filter-search {
-  display: flex;
-  margin-top: 26px;
+  padding-top: 26px;
 }
 
 .filter-group {
@@ -585,7 +591,6 @@ min-height: 204px;
   position: relative;
   margin-bottom: 25px;
 }
-
 
 .filter-label {
   position: relative;
@@ -620,6 +625,10 @@ min-height: 204px;
 
 .filter-input-checkbox:disabled + .filter-label {
   opacity: 0.3;
+}
+
+.filter-input-checkbox[disabled] + label {
+  cursor: default;
 }
 
 .filter-group-price {
@@ -718,10 +727,12 @@ min-height: 204px;
   width: 4px;
   height: 4px;
   box-sizing: content-box;
-  background: #ababab;
+  background: var(--gray-toogle);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 var(--container-shadow);
+  cursor: pointer;
+  padding: 0;
 }
 
 .toggle:hover,
@@ -772,21 +783,26 @@ min-height: 204px;
   padding-top: 26px;
 }
 
-.sort-option a {
+.sort-option button {
   color: var(--light-gray);
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
   margin-right: 33px;
+  border: none;
   border-bottom: 1px dotted var(--slightly-desaturated-blue);
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.sort-option a:hover,
-.sort-option a:focus {
+.sort-option button:hover,
+.sort-option button:focus {
   color: var(--slightly-desaturated-blue);
 }
 
-.sort-option a:active {
+.sort-option button:active {
   color: var(--basic-black);
   border: none;
   text-decoration: none;
@@ -832,9 +848,14 @@ min-height: 204px;
   border-width: 2px;
   border-color: var(--basic-white);
   color: var(--basic-white);
-  width: 137px;
-  height: 36px;
+  min-width: 137px;
+  min-height: 36px;
   margin:3px 9px 0 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -927,12 +948,11 @@ min-height: 204px;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
-
 }
 
 .detail:hover,
 .detail:focus {
-  background-color: var(--slightly-desaturated-blue);
+  background-color: var(--slightly-desaturated-blue-hover);
 }
 
 .detail:active {
@@ -1004,8 +1024,8 @@ min-height: 204px;
   background-color: var(--basic-white);
   position: absolute;
   width: 464px;
-  bottom: -393px;
-  padding: 52px 55px 53px 49px;
+  bottom: -390px;
+  padding: 52px 55px 50px 49px;
   align-items: center;
   margin: 0 -284px;
   left: 50%;
@@ -1112,7 +1132,7 @@ min-height: 204px;
 }
 
 .form-input-date:hover {
-  background-color: var(--very-light-gray);
+  background-color: var(--very-light-gray-hover);
 }
 
 .form-input-date:focus {
@@ -1251,4 +1271,5 @@ min-height: 204px;
 
 .form-submit-btn:active {
   background-color: var(--moderate-blue);
+  color: rgba(255, 255, 255, 0.3)
 }
