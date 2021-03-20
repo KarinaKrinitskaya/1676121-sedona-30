@@ -21,6 +21,7 @@
 --gray-toogle:#ABABAB;
 --container-shadow:rgba(0, 1, 1, 0.2);
 --footer-color:rgba(255, 255, 255, 0.9);
+--button-opacity:rgba(255, 255, 255, 0.3);
 }
 
 /*Global*/
@@ -87,12 +88,12 @@ img {
 
 .button:active {
   background-color: var(--very-dark-desaturated-orange);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--button-opacity);
 }
 
 /* Main navigation */
 
-.main-header {
+.main-nav {
   position: relative;
 }
 
@@ -712,7 +713,7 @@ min-height: 204px;
 
 .price-range-controls {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--button-opacity);
 }
 
 .price-bar {
@@ -740,6 +741,7 @@ min-height: 204px;
   width: 4px;
   height: 4px;
   border-width: 9px;
+  margin: -1px;
 }
 
 .toogle-min {
@@ -783,7 +785,7 @@ min-height: 204px;
   padding-top: 26px;
 }
 
-.sort-option button {
+.sort-option a {
   color: var(--light-gray);
   font-size: 12px;
   line-height: 18px;
@@ -797,12 +799,12 @@ min-height: 204px;
   text-transform: uppercase;
 }
 
-.sort-option button:hover,
-.sort-option button:focus {
+.sort-option a:hover,
+.sort-option a:focus {
   color: var(--slightly-desaturated-blue);
 }
 
-.sort-option button:active {
+.sort-option a:active {
   color: var(--basic-black);
   border: none;
   text-decoration: none;
@@ -957,6 +959,7 @@ min-height: 204px;
 
 .detail:active {
   background-color: var(--moderate-blue);
+  color: var(--button-opacity);
 }
 
 .res {
@@ -977,6 +980,7 @@ min-height: 204px;
 
 .res:active {
   background-color: var(--very-dark-desaturated-orange);
+  color: var(--button-opacity);
 }
 
 .rating {
@@ -1153,6 +1157,7 @@ min-height: 204px;
   height: 38px;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 
 .form-btn-minus::after {
@@ -1196,6 +1201,7 @@ min-height: 204px;
   width: 38px;
   height: 38px;
   position: relative;
+  cursor: pointer;
 }
 
 .form-btn-plus::after {
@@ -1262,6 +1268,7 @@ min-height: 204px;
   font-weight: 700;
   height: 58px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .form-submit-btn:hover,
@@ -1271,5 +1278,5 @@ min-height: 204px;
 
 .form-submit-btn:active {
   background-color: var(--moderate-blue);
-  color: rgba(255, 255, 255, 0.3)
+  color: var(--button-opacity);
 }
