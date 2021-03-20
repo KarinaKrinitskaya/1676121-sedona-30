@@ -347,35 +347,34 @@ min-height: 204px;
   line-height: 24px;
   padding-top: 60px;
   position: relative;
-  padding: 0px 316px;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 24px;
   margin-bottom: 4px;
-  margin-top: 55px;
+  margin-top: -5px;
   margin-left: -9px;
 }
 
 .search p {
   margin-top: 34px;
   margin-bottom: -7px;
-  padding-left: 57px;
+  padding-left: 375px;
   padding-right: 370px;
   width: 450px;
 }
 
-.search a {
-  display: block;
-  margin-top: 47px ;
-  padding: 32px 0;
-  text-decoration: none;
+.search-button {
+  width: 568px;
+  height: 86px;
+  margin-top: 50px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
   color: var(--basic-white);
   background-color: var(--mostly-desaturated-dark-orange);
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
+  border: 0;
 }
 
 .map {
